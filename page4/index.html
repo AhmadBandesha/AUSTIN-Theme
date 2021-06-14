@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Antic+Slab&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3007e03de8.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bg-container">
+        <div class="nav-bar">
+            <div class="logo"><img src="logo.webp"></div>
+            <div class="lis-div">
+                <ul id="ul-data">
+                    <li><a href="../index.html" style="text-decoration: none">home</a></li>
+                    <li><a href="../page2/index.html" style="text-decoration: none">products</a>
+                    <ul id="drop-ul">
+                    <li><a href="" style="text-decoration: none">guitar-cases</a></li>
+                    <li><a href="" style="text-decoration: none">messenger</a></li>
+                    <li><a href="" style="text-decoration: none">tote</a></li>
+                    <li><a href="" style="text-decoration: none">wallets</a></li>
+                    <li><a href="" style="text-decoration: none">arizona bifold</a></li>
+                    <li><a href="" style="text-decoration: none">arizona picker</a></li>
+                    <li><a href="" style="text-decoration: none">weekender</a></li>
+                    </ul>
+                    </li>
+                    <li><a href="../page3/index.html" style="text-decoration: none">our story</a></li>
+                    <li><a href="../page4/index.html" style="text-decoration: none">blog</a></li>
+                    <li><a href="../page5/index.html" style="text-decoration: none">theme info</a></li>
+                    <i class="fas fa-user"></i><i class="fas fa-search"></i><i class="fas fa-shopping-cart" onclick="clickIcon()"></i>
+                    <span id="span">0</span>
+                </ul>
+                <div class="shop-cart-div">
+                    <button id="continue"><i class="fas fa-long-arrow-alt-left"></i>&nbsp;    continue shopping</button>
+                    <ul id="add-data">
+                        <!-- <li></li>
+                        <li></li>
+                        <li id="incrData"><button class="plus">+</button><input type="text" value="0" id="input">
+                        <button class="minus disabled">-</button><span id="price">50</span></li>
+                        <li id="lower"><button id="del-btn">delete item</button></li> -->
+                    </ul>
+                    <h1>your cart is empty</h1>
+                    <button id="clr-btn">clear all</button>
+                </div>
+            </div>
+        </div>
+        <img src="FL-bigger_1400x.jpg">
+        <div class="txt-div">
+            <h1>travel journal</h1><p>seeing the world, one bag at a time</p>
+        </div>
+    </div>
+    <div class="main-images">
+        <div class="text-img">
+            <img src="austin-1_600x.jpg">
+            <p><span style="color: #AF1F31;font-size: 18px;">ACCESSORIES FOR EVERYDAY LIVING</span><br>by Sean Campbell</p>
+            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia consectetur nobis magni magnam in reprehenderit!</h3>
+            <a href="" id="learn">View Full Article <i class="fas fa-long-arrow-alt-right"></i></a>
+        </div>
+        <div class="text-img">
+            <img src="austin-2_997f63f3-9f33-40c6-a81c-ddb63b74a40f_600x.jpg">
+            <p><span style="color: #AF1F31;font-size: 18px;">VINTAGE TRAVEL ESSENTIALS</span><br>by Sharon Austin</p>
+            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia consectetur nobis magni magnam in reprehenderit!</h3>
+            <a href="" id="learn">View Full Article <i class="fas fa-long-arrow-alt-right"></i></a>
+        </div>
+        <div class="text-img">
+            <img src="austin-8_600x.webp">
+            <p><span style="color: #AF1F31;font-size: 18px;">ACCESSORIES FOR EVERYDAY LIVING</span><br>by Sean Campbell</p>
+            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia consectetur nobis magni magnam in reprehenderit!</h3>
+            <a href="" id="learn">View Full Article <i class="fas fa-long-arrow-alt-right"></i></a>
+        </div>
+        <div class="text-img">
+            <img src="info-hero_fe483715-45fd-4609-b306-1c0349bef678_1400x.jpg">
+            <p><span style="color: #AF1F31;font-size: 18px;">VINTAGE TRAVEL ESSENTIALS</span><br>by Sharon Austin</p>
+            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia consectetur nobis magni magnam in reprehenderit!</h3>
+            <a href="" id="learn">View Full Article <i class="fas fa-long-arrow-alt-right"></i></a>
+        </div>
+        <div class="text-img">
+            <img src="austin-3_600x.webp">
+            <p><span style="color: #AF1F31;font-size: 18px;">ACCESSORIES FOR EVERYDAY LIVING</span><br>by Sean Campbell</p>
+            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia consectetur nobis magni magnam in reprehenderit!</h3>
+            <a href="" id="learn">View Full Article <i class="fas fa-long-arrow-alt-right"></i></a>
+        </div>
+        <div class="text-img">
+            <img src="austin-5_600x.webp">
+            <p><span style="color: #AF1F31;font-size: 18px;">VINTAGE TRAVEL ESSENTIALS</span><br>by Sharon Austin</p>
+            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia consectetur nobis magni magnam in reprehenderit!</h3>
+            <a href="" id="learn">View Full Article <i class="fas fa-long-arrow-alt-right"></i></a>
+        </div>
+        <div class="text-img">
+            <img src="austin-7_3371d582-6b13-4068-a745-e34df14392b5_600x.webp">
+            <p><span style="color: #AF1F31;font-size: 18px;">VINTAGE TRAVEL ESSENTIALS</span><br>by Sharon Austin</p>
+            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia consectetur nobis magni magnam in reprehenderit!</h3>
+            <a href="" id="learn">View Full Article <i class="fas fa-long-arrow-alt-right"></i></a>
+        </div>
+    </div>
+    <div class="footer-lis">
+        <div class="lis1">
+            <ul id="ul1">
+                <li>shop</li>
+                <li>messenger</li>
+                <li>tote</li>
+                <li>wallet</li>
+                <li>guitar-cases</li>
+                <li>weekender</li>
+            </ul>
+        </div>
+        <div class="lis1">
+            <ul id="ul1">
+                <li>quick links</li>
+                <li>home</li>
+                <li>blog</li>
+                <li>contact us</li>
+                <li>buy retina</li>
+                <li></li>
+            </ul>
+        </div>
+        <div class="lis1">
+            <ul id="ul1">
+                <li>about</li>
+                <li></li>
+                <p>The Retina Shopify theme is designed<br> and developed by Out of the Sandbox. All<br> products and
+                    images are courtesy of<br> Whipping Post.</p>
+                <li><i class="fab fa-facebook-f"></i><i class="fab fa-instagram"></i><i class="fab fa-twitter"></i></li>
+            </ul>
+        </div>
+        <div class="lis1">
+            <ul id="ul1">
+                <li>NEWS & UPDATES</li>
+                <li style="font-size: 13px;">Sign up to get the latest on sales, new<br> releases and more…</li>
+                <li></li>
+                <input type="text" placeholder="Enter Your Email Address" id="email">
+                <button id="sign">sign-up</button>
+            </ul>
+        </div>
+    </div>
+    <div class="footer">
+        <p>© 2021 Retina Theme Austin. Shopping Cart by Shopify</p>
+        <div class="payment"><img src="download (31).svg"><img src="download (32).svg"><img src="download (33).svg">
+            <img src="download (34).svg"><img src="download (35).svg"><img src="download (36).svg">
+        </div>
+    </div>
+</body>
+<script src="main.js"></script>
+</html>

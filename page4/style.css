@@ -1,0 +1,410 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow-x: hidden;
+}
+.bg-container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid black; */
+    transition: .5s;
+}
+.bg-container img{
+    height: 100%;
+    width: 100%;
+}
+.txt-div{
+    height: 25%;
+    width: 40%;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    text-transform: uppercase;
+    font-family: 'Antic Slab', serif;
+}
+.txt-div h1{
+    font-size: 40px;
+    color: white;
+    letter-spacing: 2px;
+}
+.txt-div p{
+    color: white;
+}
+.nav-bar{
+    height: 14vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    transition: .5s;
+}
+.logo{
+    height: 100%;
+    width: 30%;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo img{
+    height: 50%;
+    width: 40%;
+}
+.lis-div{
+    height: 100%;
+    width: 55%;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+}
+#ul-data{
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    /* border: 1px solid black; */
+    list-style: none;
+    font-family: 'Antic Slab', serif;
+    text-transform: capitalize;
+}
+#ul-data li{
+    padding: 4px 0;
+    color: white;
+}
+#ul-data a{
+    color: black;
+    font-weight: bold;
+}
+#ul-data a:hover{
+    color: white;
+    color: #BF4B5A;
+}
+#ul-data li:hover{
+    border-bottom: 2px solid #BF4B5A;
+    cursor: pointer;
+}
+#ul-data li:nth-child(4){
+    border-bottom: 2px solid #BF4B5A;
+    padding: 4px 0;
+    box-sizing: border-box;
+}
+.lis-div i{
+    padding: 4px 0;
+    transition: .5s;
+}
+.lis-div i:hover{
+    cursor: pointer;
+    color: #BF4B5A;
+}
+#drop-ul{
+    height: 40vh;
+    width: 16vw;
+    background-color: #EDE9DD;
+    position: absolute;
+    top: 18vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    list-style: none;
+    visibility: hidden;
+}
+#drop-ul li{
+    margin-left: 40px;
+}
+#drop-ul li:nth-child(4){
+    border-bottom: none;
+}
+#drop-ul li:hover{
+    border-bottom: none;
+}
+#ul-data li:nth-child(2):hover #drop-ul{
+    visibility: visible;
+    transform: translateY(-8.5vh);
+    transition: .5s;
+}
+#span{
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    color: white;
+    background-color: red;
+    font-family: 'Antic Slab', serif;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 3vh;
+    right: 12.5%;
+}
+.shop-cart-div{
+    height: 100vh;
+    width: 35%;
+    background-color: #333333;
+    position: fixed;
+    top: 0;
+    right: -35%;
+    /* right: 0;  */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: .5s;
+}
+#add-data{
+    height: 70%;
+    width: 100%;
+    border-bottom: 1px solid #575656;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    list-style: none;
+    overflow-y: scroll;
+}
+#add-data ul{
+    height: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    /* border: 1px solid white; */
+}
+#add-data ul li{
+    /* border: 1px solid white; */
+
+}
+#add-data li{
+    height: 22vh;
+    width: 30%;
+    /* border: 1px solid white; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+    font-family: 'Antic Slab', serif;
+    font-size: 15px;
+    text-align: center;
+}
+#add-data #lower{
+    height: 20%;
+    width: 100%;
+}
+#add-data li img{
+    height: 80%;
+    width: 95%;
+}
+#input{
+    height: 20%;
+    width: 40%;
+    border: none;
+    outline: none;
+    background-color: #575656;
+    padding: 0 10%;
+    color: white;
+    box-sizing: border-box;
+}
+.plus{
+    height: 5vh;
+    width: 2.5vw;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+    border: 1px solid #575656;
+}
+.minus{
+    height: 5vh;
+    width: 2.5vw;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+    border: 1px solid #575656;
+}
+#del-btn{
+    height: 15vh;
+    width: 60%;
+    background-color: #BF4B5A;
+    border: none;
+    outline: none;
+    color: white;
+    font-family: 'Antic Slab', serif;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    transition: .5s;
+}
+#del-btn:hover{
+    cursor: pointer;
+    background-color: #575656;
+}
+#clr-btn{
+    height: 8vh;
+    width: 60%;
+    background-color: #BF4B5A;
+    border: none;
+    outline: none;
+    color: white;
+    font-family: 'Antic Slab', serif;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    transition: .5s;
+}
+#clr-btn:hover{
+    cursor: pointer;
+    background-color: #575656;
+}
+.shop-cart-div h1{
+    font-family: 'Antic Slab', serif;
+    color: white;
+    font-weight: 200;
+    position: absolute;
+    left: 22%;
+    top: 50%;
+    /* padding: 200px 40%; */
+}
+#continue{
+    height: 10vh;
+    width: 100%;
+    font-family: 'Antic Slab', serif;
+    text-transform: capitalize;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    background: transparent;
+    outline: none;
+    border: none;
+    color: white;
+    border-bottom: 1px solid #575656;
+    cursor: pointer;
+}
+.main-images{
+    height: 300vh;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    /* border: 1px solid black; */
+}
+.text-img{
+    height: 70vh;
+    width: 40%;
+    /* border: 1px solid red; */
+    font-family: 'Antic Slab', serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.text-img img{
+    height: 50%;
+    width: 100%;
+}
+#learn{
+    color: red;
+    text-decoration: none;
+    font-size: 20px;
+}
+#learn:hover{
+    transition: .5s;
+    cursor: pointer;
+    color: black;
+}
+.footer-lis{
+    height: 60vh;
+    width: 100%;
+    background-color: #F9F7F3;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.lis1{
+    height: 90%;
+    width: 20%;
+    /* border: 1px solid black; */
+}
+#ul1{
+    height: 100%;
+    width: 90%;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-left: 10%;
+    list-style: none;
+    font-family: 'Antic Slab', serif;
+    text-transform: capitalize;
+    color: #AF1F31;
+}
+#ul1 li:nth-child(1){
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    padding: 10px 0;
+    color: black;
+    font-weight: bold;
+}
+#ul1 li:nth-last-child(1){
+    width: 40%;
+    display: flex;
+    justify-content: space-evenly;
+}
+#ul1 li:hover{
+    cursor: pointer;
+    color: black;
+}
+#email{
+    height: 40px;
+    width: 90%;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    outline: none;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+#sign{
+    height: 40px;
+    width: 90%;
+    font-family: 'Antic Slab', serif;
+    text-transform: uppercase;
+    background-color: #AF1F31;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+#sign:hover{
+    cursor: pointer;
+    background-color: #8b2632;
+}
+.footer{
+    height: 25vh;
+    width: 100%;
+    background-color: #EDE9DD;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.payment{
+    height: 30%;
+    width: 30%;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Antic+Slab&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3007e03de8.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bg-container">
+        <div class="nav-bar">
+            <div class="logo"><img src="logo.webp"></div>
+            <div class="lis-div">
+                <ul id="ul-data">
+                    <li><a href="../index.html" style="text-decoration: none">home</a></li>
+                    <li><a href="../page2/index.html" style="text-decoration: none">products</a>
+                    <ul id="drop-ul">
+                    <li><a href="" style="text-decoration: none">guitar-cases</a></li>
+                    <li><a href="" style="text-decoration: none">messenger</a></li>
+                    <li><a href="" style="text-decoration: none">tote</a></li>
+                    <li><a href="" style="text-decoration: none">wallets</a></li>
+                    <li><a href="" style="text-decoration: none">arizona bifold</a></li>
+                    <li><a href="" style="text-decoration: none">arizona picker</a></li>
+                    <li><a href="" style="text-decoration: none">weekender</a></li>
+                    </ul>
+                    </li>
+                    <li><a href="../page3/index.html" style="text-decoration: none">our story</a></li>
+                    <li><a href="../page4/index.html" style="text-decoration: none">blog</a></li>
+                    <li><a href="../page5/index.html" style="text-decoration: none">theme info</a></li>
+                    <i class="fas fa-user"></i><i class="fas fa-search"></i><i class="fas fa-shopping-cart" onclick="clickIcon()"></i>
+                    <span id="span">0</span>
+                </ul>
+                <div class="shop-cart-div">
+                    <button id="continue"><i class="fas fa-long-arrow-alt-left"></i>&nbsp;    continue shopping</button>
+                    <ul id="add-data">
+                        <!-- <li></li>
+                        <li></li>
+                        <li id="incrData"><button class="plus">+</button><input type="text" value="0" id="input">
+                        <button class="minus disabled">-</button><span id="price">50</span></li>
+                        <li id="lower"><button id="del-btn">delete item</button></li> -->
+                    </ul>
+                    <h1>your cart is empty</h1>
+                    <button id="clr-btn">clear all</button>
+                </div>
+            </div>
+        </div>
+        <img src="hero-retina-txt_1400x.jpg">
+    </div>
+    <div class="center-txt">
+        <p>The Retina theme is the proud winner of the Shopify Ecommerce Design Award, a prestigious competition judged by world-renowned designers. Retina is an iconic and hugely popular theme that<br> boasts a wide variety of homepage sections, including full-width slideshows and video, customer testimonials, Google map, contact form, logo list, featured promotions, image gallery and much more.<br> It also offers uniquely configurable page templates and multiple blog layout options. </p>
+    </div>
+    <div class="main-icon-div">
+        <div class="icon1">
+            <img src="1.svg">
+            <p><span style="font-weight: bold;">Dismissable Promo Banner</span><br> Promote your latest sale, promotion, or<br> discount at the top of the page.</p>
+        </div>
+        <div class="icon1">
+            <img src="2.svg">
+            <p><span style="font-weight: bold;">Multi-level Menu</span><br>Feature a drop-down menu to help<br> customers navigate your store.</p>
+        </div>
+        <div class="icon1">
+            <img src="3.svg">
+            <p><span style="font-weight: bold;">Customer Testimonials</span><br>Promote your products by sharing your<br> customers' comments and quotes.</p>
+        </div>
+        <div class="icon1">
+            <img src="4.svg">
+            <p><span style="font-weight: bold;">Slideout Cart</span><br>Customers can easily add to their cart<br> without leaving their current page.</p>
+        </div>
+        <div class="icon1">
+            <img src="5.svg">
+            <p><span style="font-weight: bold;">Quick Shop</span><br>Allow customers to quickly view product<br> details and add to cart without leaving<br> the current page.</p>
+        </div>
+        <div class="icon1">
+            <img src="6.svg">
+            <p><span style="font-weight: bold;">Product Filtering</span><br>Allow customers to filter products by<br> type, and sort by best sellers and price<br> on the collection page.</p>
+        </div>
+        <div class="icon1">
+            <img src="7.svg">
+            <p><span style="font-weight: bold;">Dismissable Promo Banner</span><br> Promote your latest sale, promotion, or<br> discount at the top of the page.</p>
+        </div>
+        <div class="icon1">
+            <img src="8.svg">
+            <p><span style="font-weight: bold;">Product Zoom</span><br>Give customers a closer look at a product<br> when they hover over an image.</p>
+        </div>
+        <div class="icon1">
+            <img src="9.svg">
+            <p><span style="font-weight: bold;">Versatile Sidebar</span><br>Feature menus, a search bar, and other<br> content in a toggleable sidebar on<br> collection and blog pages.</p>
+        </div>
+        <div class="icon1">
+            <img src="10.svg">
+            <p><span style="font-weight: bold;">Google Maps</span><br>Allow customers to view and get<br> directions to your store location via<br> Google Maps.</p>
+        </div>
+        <div class="icon1">
+            <img src="11.svg">
+            <p><span style="font-weight: bold;">Special Page Templates</span><br>Customize product and info pages with<br> configurable content and unique layouts.</p>
+        </div>
+        <div class="icon1">
+            <img src="12.svg">
+            <p><span style="font-weight: bold;">FAQ Page</span><br>Share product or brand FAQs with<br> customers on a dedicated FAQ page.</p>
+        </div>
+    </div>
+    <div class="mac-img-div">
+        <img src="hero-mac2_1400x.jpg">
+        <div class="txt-div">
+            <h1>an award-wining theme</h1>
+            <button id="notified-btn">buy now</button>
+        </div>
+    </div>
+    <div class="li-container">
+        <div class="ul-div">
+            <ul id="ul2">
+                <li>Wunderkin Co</li>
+                <li>Hyde and Hare</li>
+                <li>Snoogs & Wilde</li>
+                <li>Homebody</li>
+                <li>The Station Store</li>
+                <li>Part & Parcel</li>
+            </ul>
+            <ul id="ul2">
+                <li>Wunderkin Co</li>
+                <li>Hyde and Hare</li>
+                <li>Snoogs & Wilde</li>
+                <li>Homebody</li>
+                <li>The Station Store</li>
+                <li>Part & Parcel</li>
+            </ul>
+            <ul id="ul2">
+                <li>Wunderkin Co</li>
+                <li>Hyde and Hare</li>
+                <li>Snoogs & Wilde</li>
+                <li>Homebody</li>
+                <li>The Station Store</li>
+                <li>Part & Parcel</li>
+            </ul>
+            <ul id="ul2">
+                <li>Wunderkin Co</li>
+                <li>Hyde and Hare</li>
+                <li>Snoogs & Wilde</li>
+                <li>Homebody</li>
+                <li>The Station Store</li>
+                <li>Part & Parcel</li>
+            </ul>
+            <ul id="ul2">
+                <li>Wunderkin Co</li>
+                <li>Hyde and Hare</li>
+                <li>Snoogs & Wilde</li>
+                <li>Homebody</li>
+                <li>The Station Store</li>
+                <li>Part & Parcel</li>
+            </ul>
+        </div>
+        <h1>RETINA INCLUDES 3 ADDITIONAL STYLES:</h1>
+        <div class="main-led-div">
+            <div class="led1">
+                <img src="iMac-amsterdam-421.png">
+                <h2>AMSTERDAM</h2>
+            </div>
+            <div class="led1">
+                <img src="iMac-melbourne-421.png">
+                <h2>MELBOURNE</h2>
+            </div>
+            <div class="led1">
+                <img src="iMac-mtl-421.png">
+                <h2>MONTREAL</h2>
+            </div>
+        </div>
+    </div>
+    <div class="mac-img-div1">
+        <img src="info-hero_fe483715-45fd-4609-b306-1c0349bef678_1400x.jpg">
+        <div class="txt-div">
+            <h1>video guide:setting up retina's home<br>page</h1>
+            <button id="notified-btn">play video</button>
+        </div>
+    </div>
+    <div class="footer-lis">
+        <div class="lis1">
+            <ul id="ul1">
+                <li>shop</li>
+                <li>messenger</li>
+                <li>tote</li>
+                <li>wallet</li>
+                <li>guitar-cases</li>
+                <li>weekender</li>
+            </ul>
+        </div>
+        <div class="lis1">
+            <ul id="ul1">
+                <li>quick links</li>
+                <li>home</li>
+                <li>blog</li>
+                <li>contact us</li>
+                <li>buy retina</li>
+                <li></li>
+            </ul>
+        </div>
+        <div class="lis1">
+            <ul id="ul1">
+                <li>about</li>
+                <li></li>
+                <p>The Retina Shopify theme is designed<br> and developed by Out of the Sandbox. All<br> products and
+                    images are courtesy of<br> Whipping Post.</p>
+                <li><i class="fab fa-facebook-f"></i><i class="fab fa-instagram"></i><i class="fab fa-twitter"></i></li>
+            </ul>
+        </div>
+        <div class="lis1">
+            <ul id="ul1">
+                <li>NEWS & UPDATES</li>
+                <li style="font-size: 13px;">Sign up to get the latest on sales, new<br> releases and more…</li>
+                <li></li>
+                <input type="text" placeholder="Enter Your Email Address" id="email">
+                <button id="sign">sign-up</button>
+            </ul>
+        </div>
+    </div>
+    <div class="footer">
+        <p>© 2021 Retina Theme Austin. Shopping Cart by Shopify</p>
+        <div class="payment"><img src="download (31).svg"><img src="download (32).svg"><img src="download (33).svg">
+            <img src="download (34).svg"><img src="download (35).svg"><img src="download (36).svg">
+        </div>
+    </div>
+</body>
+<script src="main.js"></script>
+</html>
